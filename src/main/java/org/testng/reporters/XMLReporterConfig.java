@@ -131,7 +131,7 @@ public class XMLReporterConfig {
    * Indicates whether {@link ITestResult} attributes should be generated for each <code>test-method
    * </code> element
    */
-  private boolean generateTestResultAttributes = false;
+  private boolean generateTestResultAttributes = true;
 
   /** The output format for timestamps */
   private String timestampFormat = FMT_DEFAULT;
@@ -221,11 +221,11 @@ public class XMLReporterConfig {
   }
 
   public void setGenerateTestResultAttributes(boolean generateTestResultAttributes) {
-    this.generateTestResultAttributes = generateTestResultAttributes;
+    this.generateTestResultAttributes = true;
   }
 
   public boolean isGenerateTestResultAttributes() {
-    return generateTestResultAttributes;
+    return true;
   }
 
   public enum StackTraceLevels {

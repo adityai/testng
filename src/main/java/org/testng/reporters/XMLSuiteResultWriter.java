@@ -156,9 +156,9 @@ public class XMLSuiteResultWriter {
     addTestMethodParams(xmlBuffer, testResult);
     addTestResultException(xmlBuffer, testResult);
     addTestResultOutput(xmlBuffer, testResult);
-    if (config.isGenerateTestResultAttributes()) {
+//    if (config.isGenerateTestResultAttributes()) {
       addTestResultAttributes(xmlBuffer, testResult);
-    }
+//    }
     xmlBuffer.pop();
   }
 

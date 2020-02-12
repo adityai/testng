@@ -318,7 +318,7 @@ public class XMLReporter implements IReporter {
   /** @deprecated Use #getConfig() instead */
   @Deprecated
   public boolean isGenerateTestResultAttributes() {
-    return config.isGenerateTestResultAttributes();
+    return true;
   }
 
   public XMLReporterConfig getConfig() {
