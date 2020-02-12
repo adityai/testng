@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+
 if [ $1 == "sonarqube" ] ; then
   if [ "${TRAVIS_JDK_VERSION}" == "oraclejdk8" ] ; then
     if [ -n "${TRAVIS_PULL_REQUEST}" -a "${TRAVIS_PULL_REQUEST}" != "false" ] ; then
